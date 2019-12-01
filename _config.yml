@@ -1,8 +1,6 @@
 author: Marc Tremblay
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+description: >-
+  Marc Tremblay has been developing software professionally for over 30 years. He is currently an Engineering Lead at BCG Digital Ventures.
 kramdown:
   syntax_highlighter: rouge
   syntax_highlighter_opts:
@@ -17,6 +15,8 @@ plugins:
 show_excerpts: true
 social_links:
   github: sapientpants
+  keybase: sapientpants
+  linkedin: marc-tremblay
   rss: sapientpants
   twitter: sapientpants
 strict_front_matter: true
