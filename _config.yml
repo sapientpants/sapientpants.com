@@ -10,6 +10,7 @@ kramdown:
     span:
       line_numbers: false
 markdown: kramdown
+permalink: /:title/
 plugins:
   - jekyll-feed
 show_excerpts: true
