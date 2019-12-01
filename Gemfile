@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
 gem "jekyll-seo"
-#gem "minima", "~> 2.5"
+gem "rouge", "~> 3.11.0"
 
 group :jekyll_plugins do
   gem "github-pages", "~> 202"
