@@ -13,6 +13,7 @@ markdown: kramdown
 permalink: /:title/
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
 show_excerpts: true
 social_links:
   github: sapientpants
