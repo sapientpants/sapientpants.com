@@ -1,6 +1,8 @@
+about: >-
+  Marc Tremblay has been developing software professionally for over 20 years. He is currently an Engineering Lead at BCG Digital Ventures.
 author: Marc Tremblay
 description: >-
-  Marc Tremblay has been developing software professionally for over 30 years. He is currently an Engineering Lead at BCG Digital Ventures.
+  A blog about engineering and leadership
 kramdown:
   syntax_highlighter: rouge
   syntax_highlighter_opts:
@@ -23,3 +25,15 @@ social_links:
 strict_front_matter: true
 timezone: Etc/UTC
 title: sapientpants
+
+# jekyll-seo-tag
+social:
+  name: Marc Tremblay
+  links:
+    - https://twitter.com/sapientpants
+    - https://www.linkedin.com/in/marc-tremblay
+    - https://github.com/sapientpants
+tagline: A blog about engineering and leadership
+twitter:
+  username: sapientpants
+  card: summary

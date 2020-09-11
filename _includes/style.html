@@ -1,102 +1,168 @@
 <style>
-body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,p,blockquote,th,td {
-	margin:0;
-	padding:0;
-}
-html {
-  background: #ffffff;
-}
-body {
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 24px;
-  line-height: 24px;
-  margin: 0 auto;
-  max-width: 1000px;
-}
-body > header, body > main, body > footer {
-  margin: 0 auto;
-  max-width: 80%;
-}
-body > footer {
-  border-top: 1px solid black;
-  font-size: 16px;
-  margin: 100px auto;
-}
-body > header {
-  font-size: 16px;
-}
-figure {
-  background: #eeeeee;
-  border-radius: 20px;
-  max-width: 480px;
-  margin: 0 auto;
-  padding: 20px;
-}
-figcaption {
-  font-size: 0.8em;
-  margin: 10px 0;
-}
-.references {
-  font-size: 0.67em;
-}
-.references ul {
-  list-style: none;
-  margin-top: 0.67em;
-}
-.post-list {
-  list-style: none;
-}
-.post-meta {
-  font-size: 0.67em;
-}
-.social-media-list {
-  list-style: none;
-}
-.social-media-list li {
-  display: inline;
-  margin-left: 20px;
-}
-.social-media-list li:first-child {
-  margin-left: 0;
-}
-.social-media-list svg {
-  height: 1.5rem;
-  width: 1.5rem;
-}
-.social-media-list .github svg {
-  fill: #000000;
-}
-.social-media-list .keybase svg {
-  fill: #33a0ff;
-}
-.social-media-list .linkedin svg {
-  fill: #0077b5;
-}
-.social-media-list .mastodon svg {
-  fill: #3088D4;
-}
-.social-media-list .rss svg {
-  fill: #ffa500;
-}
-.social-media-list .twitter svg {
-  fill: #1da1f2;
-}
-h1 {
-	font-size: 1.5em;
-	line-height: 1em;
-	margin-top: 1.929em;
-	margin-bottom: 0.643em;
-}
-h2 {
-	font-size:1.1667em;
-	line-height: 1.286em;
-	margin-top: 1.929em;
-	margin-bottom: 0.643em;
-}
-p {
-  font-size: 1em;
-  line-height: 1.5em;
-	margin-top: 1.5em;
-	margin-bottom: 1.5em;
-}
+  body,
+  div,
+  dl,
+  dt,
+  dd,
+  ul,
+  ol,
+  li,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  pre,
+  form,
+  fieldset,
+  p,
+  blockquote,
+  th,
+  td {
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    background: #ffffff;
+  }
+
+  body {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 24px;
+    line-height: 24px;
+    margin: 0 auto;
+    max-width: 1000px;
+  }
+
+  body>header,
+  body>main,
+  body>footer {
+    margin: 0 auto;
+    max-width: 80%;
+  }
+
+  body>footer {
+    border-top: 1px solid black;
+    font-size: 16px;
+    margin: 100px auto;
+  }
+
+  body>footer ul {
+    list-style: none;
+  }
+
+  body>header {
+    font-size: 16px;
+  }
+
+  blockquote {
+    color: gray;
+    font-style: italic;
+    margin: 0 50px;
+  }
+
+  blockquote cite {
+    display: block;
+    font-size: 0.8rem;
+    text-align: right;
+  }
+
+  blockquote cite a {
+    color: grey;
+  }
+
+  figure {
+    background: #eeeeee;
+    border-radius: 15px;
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  figcaption {
+    font-size: 0.8em;
+    margin: 10px 0;
+  }
+
+  .references {
+    font-size: 0.67em;
+  }
+
+  .references ul {
+    list-style: none;
+    margin-top: 0.67em;
+  }
+
+  .post-list {
+    list-style: none;
+  }
+
+  .post-meta {
+    font-size: 0.67em;
+  }
+
+  .social-media-list {
+    list-style: none;
+  }
+
+  .social-media-list li {
+    display: inline;
+    margin-left: 20px;
+  }
+
+  .social-media-list li:first-child {
+    margin-left: 0;
+  }
+
+  .social-media-list svg {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+
+  .social-media-list .github svg {
+    fill: #000000;
+  }
+
+  .social-media-list .keybase svg {
+    fill: #33a0ff;
+  }
+
+  .social-media-list .linkedin svg {
+    fill: #0077b5;
+  }
+
+  .social-media-list .mastodon svg {
+    fill: #3088D4;
+  }
+
+  .social-media-list .rss svg {
+    fill: #ffa500;
+  }
+
+  .social-media-list .twitter svg {
+    fill: #1da1f2;
+  }
+
+  h1 {
+    font-size: 1.5em;
+    line-height: 1em;
+    margin-top: 1.929em;
+    margin-bottom: 0.643em;
+  }
+
+  h2 {
+    font-size: 1.1667em;
+    line-height: 1.286em;
+    margin-top: 1.929em;
+    margin-bottom: 0.643em;
+  }
+
+  p {
+    font-size: 1em;
+    line-height: 1.5em;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+  }
 </style>

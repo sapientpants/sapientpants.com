@@ -1,6 +1,16 @@
 <footer>
-  <h2 class="footer-heading">{{ site.title | escape }}</h2>
-  <p>{{- site.description | escape -}}</p>
-  {%- include social.html -%}
+  <div>
+    <h2>Projects</h2>
+    <ul>
+      <li><a href="/structurizr-macros">Structurizr Macros</a></li>
+    </ul>
+  </div>
+  <div>
+    <h2>About</h2>
+    <p>{{- site.about | escape -}}</p>
+    {%- include social.html -%}
+  </div>
 </footer>
-{%- include highlight.css -%}
+{% if page.highlight -%}
+{%- include highlight-style.html -%}
+{% endif -%}
