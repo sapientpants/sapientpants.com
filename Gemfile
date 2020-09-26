@@ -4,7 +4,7 @@ gem "jekyll-seo"
 gem "rouge"
 
 group :jekyll_plugins do
-  gem "github-pages", "~> 206"
+  gem "github-pages", "~> 207"
   gem "jekyll-feed"
   gem "jekyll-seo-tag"#, "~> 2.6.0"
   gem "jekyll-sitemap"#, "~> 1.4.0"
