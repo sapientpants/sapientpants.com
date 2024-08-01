@@ -1,0 +1,38 @@
+---
+layout: default
+---
+
+{%-include back_link.html-%}
+
+<article class="post">
+  <p class="post-meta">
+    <time datetime="{{ page.date }}">{{ page.date | date: site.theme_config.date_format }}</time>
+  </p>
+
+  <h1>{{ page.title }}</h1>
+
+  {% if page.image %}
+  <div class="post-image">
+    <img srcset="{{ page.image }}_640.webp 640w, {{ page.image }}_1280.webp 1280w" alt="{{ page.title }}">
+  </div>
+  {% endif %}
+
+  {{ content }}
+
+  <div class="post-footer">
+    <ul>
+      {% if page.previous %}
+      <li>previous:
+        <span>{{- page.previous.date | date: site.theme_config.date_format -}}</span>
+        <a href="{{ page.previous.url | relative_url }}">{{ page.previous.title | downcase }}</a>
+      </li>
+      {% endif %}
+      {% if page.next %}
+      <li>next:
+        <span>{{- page.next.date | date: site.theme_config.date_format -}}</span>
+        <a href="{{ page.next.url | relative_url }}">{{ page.next.title | downcase }}</a>
+      </li>
+      {% endif %}
+    </ul>
+  </div>
+</article>
