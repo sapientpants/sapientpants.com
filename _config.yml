@@ -1,0 +1,40 @@
+author: Marc Tremblay
+description: A blog about AI, engineering and innovation
+kramdown:
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
+      start_line: 1
+    span:
+      line_numbers: false
+markdown: kramdown
+permalink: /:title/
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+show_excerpts: true
+social_links:
+  github: sapientpants
+  linkedin: marc-tremblay
+  rss: sapientpants
+strict_front_matter: true
+theme_config:
+  appearance: "auto" # can be "light", "dark" or "auto"
+  back_home_text: "sapientpants" # customize text for homepage link in post layout
+  date_format: "%Y-%m-%d" # customize how date is formatted
+  show_description: true # show blog description in home page
+timezone: Etc/UTC
+title: sapientpants
+url: https://sapientpants.com
+
+# jekyll-seo-tag
+social:
+  name: Marc Tremblay
+  links:
+    - https://www.linkedin.com/in/marc-tremblay
+    - https://github.com/sapientpants
+tagline: A blog about AI, engineering and leadership
+twitter:
+  username: sapientpants
+  card: summary
