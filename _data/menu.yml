@@ -1,0 +1,19 @@
+entries:
+  - title: all posts
+    post_list:
+      limit: 10
+      show_more: true
+      show_more_text: See archive...
+      show_more_url: archive/
+
+  - title: about
+    content:
+      - |
+        I'm Marc Tremblay, a seasoned software engineer and technology leader based in Berlin, with over twenty-five years of experience in the industry. My professional journey has been dedicated to delivering advanced technology solutions and spearheading innovative projects. I have a passion for digital innovation, and I am always eager to learn.
+      - |
+        These posts are written with a custom built AI assistant that supports me in researching, writing and editing the posts you see here. My motivation is to both gain insights into building such an AI assistant and to learn about topics that interest me in the fields of artificial intelligence, engineering, and innovation.
+      - |
+        Feel free to reach out to me on <a href="https://www.linkedin.com/in/marc-tremblay/">LinkedIn</a> if you have any questions or comments.
+
+  - title: rss
+    url: feed.xml
