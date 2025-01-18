@@ -1,0 +1,15 @@
+---
+layout: post
+description: Archive of all posts from sapientpants.com in chronological order
+title: Archive of all posts from sapientpants.com
+---
+
+{% for post in site.posts %}
+
+<div>
+  <span class='post-title'>
+    <a href="{{ site.path }}{{ post.url }}">{{ post.title }}</a>
+  </span>
+</div>
+
+{% endfor %}

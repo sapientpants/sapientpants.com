@@ -1,0 +1,47 @@
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  {%- seo -%}
+
+  {%- include style.html -%} {%- feed_meta -%}
+
+  {%- if page.code -%}
+  <link rel="stylesheet" href="/assets/code.css">
+  {%- endif -%}
+
+  {%- if page.paginator -%}
+  {%- if paginator.previous_page -%}
+  <link rel="prev" href="{{ paginator.previous_page_path | absolute_url }}">
+  {%- endif -%}
+  {%- if paginator.next_page -%}
+  <link rel="next" href="{{ paginator.next_page_path | absolute_url }}">
+  {%- endif -%}
+  {%- endif -%}
+
+  {%- if page.mermaid -%}
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      mermaid.initialize({ startOnLoad: true });
+    });
+  </script>
+  {%- endif -%}
+
+  <!-- Matomo -->
+  <script>
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function () {
+      var u = "https://sapientpants.matomo.cloud/";
+      _paq.push(['setTrackerUrl', u + 'matomo.php']);
+      _paq.push(['setSiteId', '1']);
+      var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+      g.async = true; g.src = 'https://cdn.matomo.cloud/sapientpants.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g, s);
+    })();
+  </script>
+  <!-- End Matomo Code -->
+
+</head>
